@@ -5,12 +5,15 @@ const user = require('./user')
 const role = require('./role')
 const article = require('./article')
 const search = require('./remote-search')
-
+const actiRecord = require('./record/activity')
+const visitRecord = require('./record/visit')
 const mocks = [
   ...user,
   ...role,
   ...article,
-  ...search
+  ...search,
+  ...actiRecord,
+  ...visitRecord
 ]
 
 // for front mock
